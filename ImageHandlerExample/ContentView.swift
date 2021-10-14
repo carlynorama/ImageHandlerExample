@@ -10,8 +10,13 @@ import ImageHandler
 
 struct ContentView: View {
     var body: some View {
-        Text(ImageHandler().text)
-            .padding()
+        VStack {
+            Text(ImageHandler().text)
+                .padding()
+            ImageHandler.defaultImage
+                .resizable()
+                .frame(width: 300, height: 300, alignment: .bottom)
+        }
     }
 }
 
