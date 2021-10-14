@@ -11,6 +11,7 @@
 		DA84411A2718A87B00AA5FDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8441192718A87B00AA5FDB /* ContentView.swift */; };
 		DA84411C2718A87C00AA5FDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84411B2718A87C00AA5FDB /* Assets.xcassets */; };
 		DA84411F2718A87C00AA5FDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA84411E2718A87C00AA5FDB /* Preview Assets.xcassets */; };
+		DA84416E2718D19000AA5FDB /* ImageHandler in Frameworks */ = {isa = PBXBuildFile; productRef = DA84416D2718D19000AA5FDB /* ImageHandler */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DA8441192718A87B00AA5FDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA84411B2718A87C00AA5FDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA84411E2718A87C00AA5FDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA84412D2718D00100AA5FDB /* ImageHandler */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ImageHandler; path = ../ImageHandler; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA84416E2718D19000AA5FDB /* ImageHandler in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +40,7 @@
 			children = (
 				DA8441162718A87B00AA5FDB /* ImageHandlerExample */,
 				DA8441152718A87B00AA5FDB /* Products */,
+				DA84412C2718AF6900AA5FDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +71,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DA84412C2718AF6900AA5FDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA84412D2718D00100AA5FDB /* ImageHandler */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +95,9 @@
 			dependencies = (
 			);
 			name = ImageHandlerExample;
+			packageProductDependencies = (
+				DA84416D2718D19000AA5FDB /* ImageHandler */,
+			);
 			productName = ImageHandlerExample;
 			productReference = DA8441142718A87B00AA5FDB /* ImageHandlerExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +126,9 @@
 				Base,
 			);
 			mainGroup = DA84410B2718A87B00AA5FDB;
+			packageReferences = (
+				DA84416C2718D19000AA5FDB /* XCRemoteSwiftPackageReference "ImageHandler" */,
+			);
 			productRefGroup = DA8441152718A87B00AA5FDB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,7 +286,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ImageHandlerExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = KH3G9PXA68;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -277,7 +295,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ImageHandlerExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = KH3G9PXA68;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,7 +325,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +361,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA84416C2718D19000AA5FDB /* XCRemoteSwiftPackageReference "ImageHandler" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/carlynorama/ImageHandler";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA84416D2718D19000AA5FDB /* ImageHandler */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA84416C2718D19000AA5FDB /* XCRemoteSwiftPackageReference "ImageHandler" */;
+			productName = ImageHandler;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA84410C2718A87B00AA5FDB /* Project object */;
 }
